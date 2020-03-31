@@ -1,0 +1,22 @@
+// change text Color
+
+@function change-text-color($color){
+
+    @if(lightness($color) > 70){
+        @return #333;
+
+    }
+    @else{
+        @return #fff;
+
+    }
+}
+
+// transform element
+
+@mixin transform-element($type){
+    transform:$type;
+    --webkit-transform:$type;
+    -ms-transform:$type;
+
+}
